@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Raw Whey Isolate",
+    "category": "Whey Protein",
+    "price": 4999,
+    "image": "https://placehold.co/400x400/000000/FFFFFF?text=Whey+Protein",
+    "description": "Premium quality isolate for maximum muscle recovery."
+  },
+  {
+    "id": 2,
+    "name": "Extreme Mass Gainer",
+    "category": "Mass Gainer",
+    "price": 2499,
+    "image": "https://placehold.co/400x400/000000/FFFFFF?text=Mass+Gainer",
+    "description": "High calorie formula for bulk cycles."
+  }
+]
