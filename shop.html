@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,73 +66,6 @@
 </script>
 
 </body>
-=======
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop All Products | Muscle Hub</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
 
-<header>
-    <div class="container nav">
-        <div class="logo">Muscle Hub</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="shop.html" class="active">Shop</a>
-            <a href="cart.html">Cart</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-</header>
-
-<section class="container" style="padding: 30px 0;">
-    <h2 style="color: var(--primary); margin-bottom: 20px;">All Supplements</h2>
-    
-    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
-        <input type="text" id="searchInput" placeholder="Search products..." 
-               style="padding: 10px; background: #222; border: 1px solid #444; color: white; flex: 1; min-width: 200px;">
-        
-        <select id="categoryFilter" style="padding: 10px; background: #222; border: 1px solid #444; color: white;">
-            <option value="all">All Categories</option>
-            <option value="Whey Protein">Whey Protein</option>
-            <option value="Mass Gainer">Mass Gainer</option>
-            <option value="Creatine">Creatine</option>
-            <option value="Pre-Workout">Pre-Workout</option>
-        </select>
-    </div>
-
-    <div id="featured-products" class="product-grid">
-        <p>Loading products...</p>
-    </div>
-</section>
-
-<a href="https://wa.me/919559896647" class="whatsapp-float">💬</a>
-
-<script src="assets/js/products.js"></script>
-
-<script>
-    // Search aur Filter ki logic
-    document.getElementById('searchInput').addEventListener('input', filterProducts);
-    document.getElementById('categoryFilter').addEventListener('change', filterProducts);
-
-    function filterProducts() {
-        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-        const categoryTerm = document.getElementById('categoryFilter').value;
-
-        const filtered = allProducts.filter(p => {
-            const matchesSearch = p.name.toLowerCase().includes(searchTerm);
-            const matchesCategory = categoryTerm === 'all' || p.category === categoryTerm;
-            return matchesSearch && matchesCategory;
-        });
-
-        displayProducts(filtered);
-    }
-</script>
-
-</body>
 >>>>>>> d9bcd8950c354402b2fa459ff4c7592011f5d8bc
 </html> 
